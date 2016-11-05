@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bc.liaoningu.fragments.MainPageFragment">
+
+    <LinearLayout
+        android:background="@color/topbar_blue"
+        android:id="@+id/main_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/lnu_z_white"
+                android:contentDescription="logo" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@+id/main_LinearLayout"
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical" >
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="风景图"
+            android:src="@drawable/lnu"/>
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_marginTop="10dp"
+        android:padding="1dp"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/framelayout"
+        android:layout_centerHorizontal="true">
+        <FrameLayout
+            android:background="@drawable/border"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:padding="10dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/course"
+                android:src="@mipmap/course"
+                android:contentDescription="@string/course" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/border"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:padding="10dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/score"
+                android:src="@mipmap/score"
+                android:contentDescription="@string/score" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/border"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:padding="10dp">
+        <ImageButton
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:id="@+id/choosecourse"
+            android:src="@mipmap/choosecourse"
+            android:contentDescription="选课" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/border"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:padding="10dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/lessonsplan"
+                android:src="@mipmap/lessonsplan"
+                android:contentDescription="教学计划" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/border"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:padding="10dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/calendar"
+                android:src="@mipmap/calendar"
+                android:contentDescription="校历" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/border"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:padding="10dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/yellowpage"
+                android:src="@mipmap/yellowpage"
+                android:contentDescription="黄页" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/border"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:padding="10dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/schoolbus"
+                android:src="@mipmap/schoolbus"
+                android:contentDescription="校车" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/border"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:padding="10dp">
+            <ImageButton
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/inquirecet"
+                android:src="@mipmap/inquirecet"
+                android:contentDescription="四六级" />
+        </FrameLayout>
+    </GridLayout>
+
+</RelativeLayout>
